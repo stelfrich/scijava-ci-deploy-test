@@ -67,11 +67,6 @@ If (Test-Path $customSettings) {
 			<username>travis</username>
 			<password>${env.MAVEN_PASS}</password>
 		</server>
-		<server>
-			<id>sonatype-nexus-releases</id>
-			<username>scijava-ci</username>
-			<password>${env.OSSRH_PASS}</password>
-		</server>
 	</servers>
 	<profiles>
 		<profile>
