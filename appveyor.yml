@@ -1,0 +1,31 @@
+version: '{build}'
+clone_depth: 10
+
+branches:
+  only:
+    - master
+
+environment:
+  JAVA_HOME: C:\Program Files\Java\jdk1.8.0\
+  GNUPG_HOME: C:\Gpg4win\
+  MAVEN_BIN: C:\Program Files (x86)\Apache\Maven\bin\
+  MAVEN_OPTS: "-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
+  CERTIFICATE_KEY:
+    secure: ZunDzpx3KFAr2JNKpRf25R80YSFN9QOBapGNebGrJ0erjqJ2hhFwa9P4o6c5ZEx0
+
+cache:
+  - C:\Users\appveyor\.m2\repository
+  - C:\gpg4win-vanilla-2.3.4.exe
+
+image: Visual Studio 2015
+
+platform:
+  - x64
+
+install:
+  - cmd: nuget install secure-file -ExcludeVersion
+  - cmd: secure-file\tools\secure-file -decrypt .appveyor\signingkey.asc.enc -secret "%CERTIFICATE_KEY%"
+  - ps: .\.appveyor\setup.ps1
+
+build_script:
+  - cmd: .\.appveyor\build.ps1
