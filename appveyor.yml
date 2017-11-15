@@ -12,6 +12,12 @@ environment:
   MAVEN_OPTS: "-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
   CERTIFICATE_KEY:
     secure: ZunDzpx3KFAr2JNKpRf25R80YSFN9QOBapGNebGrJ0erjqJ2hhFwa9P4o6c5ZEx0
+  MAVEN_PASS:
+    secure: ztFtD9UzT9/+QcMdOSxcBdGM5YTIWl+54eAp3tBX+bhePGogL1RBtB2l3q3u+qUz
+  GPG_KEY_NAME:
+    secure: 7kwkFOpOii3ILaId9n7H39ZlvVB0H0+vbsItX0wHJ3I=
+  GPG_PASSPHRASE:
+    secure: /RWWVIghkP3UfC69C3sChC/VuDp0zt7dJe8C0sMnYXMbKJC1Ug3yw9FHQ3BQwvoK
 
 cache:
   - C:\Users\appveyor\.m2\repository
