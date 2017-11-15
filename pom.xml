@@ -90,4 +90,21 @@ Konstanz, and KNIME GmbH.</license.copyrightOwners>
 			<url>https://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.honton.chas</groupId>
+				<artifactId>exists-maven-plugin</artifactId>
+				<version>0.0.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>remote</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
