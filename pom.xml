@@ -11,7 +11,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>scijava-ci-deploy-test</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5</version>
 
 	<name>SciJava Travis and AppVeyor Deployment</name>
 	<description>None</description>
@@ -58,7 +58,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/stelfrich/scijava-ci-deploy-test</connection>
 		<developerConnection>scm:git:git@github.com:stelfrich/scijava-ci-deploy-test</developerConnection>
-		<tag>HEAD</tag>
+		<tag>scijava-ci-deploy-test-0.0.5</tag>
 		<url>https://github.com/stelfrich/scijava-ci-deploy-test</url>
 	</scm>
 	<issueManagement>
