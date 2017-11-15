@@ -57,7 +57,7 @@
 
 	<scm>
 		<connection>scm:git:git://github.com/stelfrich/scijava-ci-deploy-test</connection>
-		<developerConnection>scm:git:git@github.com/stelfrich/scijava-ci-deploy-test</developerConnection>
+		<developerConnection>scm:git:git@github.com:stelfrich/scijava-ci-deploy-test</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/stelfrich/scijava-ci-deploy-test</url>
 	</scm>
