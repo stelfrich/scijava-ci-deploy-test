@@ -28,4 +28,4 @@ install:
   - ps: .\.appveyor\setup.ps1
 
 build_script:
-  - cmd: .\.appveyor\build.ps1
+  - ps: .\.appveyor\build.ps1
