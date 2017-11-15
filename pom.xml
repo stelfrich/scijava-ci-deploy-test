@@ -59,11 +59,11 @@
 		<connection>scm:git:git://github.com/stelfrich/scijava-ci-deploy-test</connection>
 		<developerConnection>scm:git:git@github.com/stelfrich/scijava-ci-deploy-test</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/github.com/stelfrich/scijava-ci-deploy-test</url>
+		<url>https://github.com/stelfrich/scijava-ci-deploy-test</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/github.com/stelfrich/scijava-ci-deploy-test/issues</url>
+		<url>https://github.com/stelfrich/scijava-ci-deploy-test/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Travis CI</system>
