@@ -18,4 +18,4 @@ platform:
   - x64
 
 build_script:
-  - ps: .\.appveyor\build.ps1
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/scijava/scijava-scripts/appveyor/appveyor-build.ps1'))
