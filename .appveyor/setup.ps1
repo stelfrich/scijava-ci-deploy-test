@@ -59,12 +59,12 @@ If (Test-Path $customSettings) {
 	<servers>
 		<server>
 			<id>imagej.releases</id>
-			<username>travis</username>
+			<username>appveyor</username>
 			<password>${env.MAVEN_PASS}</password>
 		</server>
 		<server>
 			<id>imagej.snapshots</id>
-			<username>travis</username>
+			<username>appveyor</username>
 			<password>${env.MAVEN_PASS}</password>
 		</server>
 	</servers>

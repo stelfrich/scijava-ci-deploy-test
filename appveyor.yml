@@ -15,7 +15,7 @@ environment:
   CERTIFICATE_KEY:
     secure: ZunDzpx3KFAr2JNKpRf25R80YSFN9QOBapGNebGrJ0erjqJ2hhFwa9P4o6c5ZEx0
   MAVEN_PASS:
-    secure: ztFtD9UzT9/+QcMdOSxcBdGM5YTIWl+54eAp3tBX+bhePGogL1RBtB2l3q3u+qUz
+    secure: LLOpS/isuKB+366dc13MIvu/kYXnAY0XChMH4hGUzkP4kNBPHrzAJLDsDhSnTA+z
   GPG_KEY_NAME:
     secure: 7kwkFOpOii3ILaId9n7H39ZlvVB0H0+vbsItX0wHJ3I=
   GPG_PASSPHRASE:
