@@ -1,21 +1,19 @@
 version: '{build}'
 clone_depth: 10
 
-branches:
-  only:
-    - master
-    - /.*-[0-9]+\..*/
+cache:
+  - C:\Users\appveyor\.m2\repository
 
 environment:
   MAVEN_OPTS: "-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
 
-cache:
-  - C:\Users\appveyor\.m2\repository
-
-image: Visual Studio 2015
-
 platform:
   - x64
+
+branches:
+  only:
+    - master
+    - /.*-[0-9]+\..*/
 
 build_script:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/scijava/scijava-scripts/appveyor/appveyor-build.ps1'))
